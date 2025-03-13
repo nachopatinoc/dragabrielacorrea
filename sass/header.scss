@@ -1,0 +1,83 @@
+/*  HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.texto_header{
+    display: flex;
+    color: rgb(120, 153, 174);
+    font-weight: bold;
+}
+
+.iconos_header{
+    display: flex;
+    align-items: center;
+}
+
+.icono_ig_header{
+    transition: scale 0.3s;
+}
+
+.icono_ig_header:hover{
+    animation: shimmer 2s forwards;
+    scale: 1.1;
+}
+
+.boton_contacto{
+    padding: 13px 40px 13px 40px;
+    background-color: rgb(120, 153, 174);
+    color: rgb(242, 242, 242);
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: scale 0.3s;
+}
+
+.boton_contacto:hover{
+    animation: shimmer 2s forwards;
+    scale: 1.1;
+}
+
+.palabra_header1{
+    margin-right: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: rgb(120, 153, 174);
+}
+
+.palabra_header1:visited{
+    color: rgb(120, 153, 174);
+}
+
+.palabra_header1:hover{
+    opacity: 0.6;
+}
+
+.palabra_header2{
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: rgb(120, 153, 174);
+}
+
+.palabra_header2:visited{
+    color: rgb(120, 153, 174);
+}
+
+.palabra_header2:hover{
+    opacity: 0.6;
+}
+
+.logo_dra{
+    width: 80px;
+    height: auto;
+}
+
+.logo_header{
+    padding-right: 120px;
+}
