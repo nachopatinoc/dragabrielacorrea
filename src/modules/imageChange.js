@@ -1,5 +1,5 @@
-const imagenesPc = ["images/img2.jpg", "images/img1.jpg"];
-const imagenesMovil = ["images/img2_movil.jpg", "images/img1_movil.jpg"];
+const imagenesPc = ["images/img2.JPG", "images/img1.jpg"];
+const imagenesMovil = ["images/img2_movil.JPG", "images/img1_movil.jpg"];
 let contador = 0;
 const img = document.getElementById("imagen_dra");
 img.style.transition = "opacity 0.55s";
