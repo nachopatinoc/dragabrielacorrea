@@ -40,9 +40,8 @@
         line-height: 1.5;
     }
 
-    .imagen_dra{
-        height: auto;
-        width: auto;
+    .video_rd4{
+        width: 100%;
     }
 
     /* PAGINA2 */
@@ -138,8 +137,9 @@
         width: auto;
     }
 
-    .video_rd4{
-        width: 70%;
+    .imagen_dra{
+        height: auto;
+        width: auto;
     }
 
     /* PAGINA 6 */
@@ -176,10 +176,10 @@
         max-height: 1800px;
     }
 
-    .div_general1, .info_pag3, .div_viñetas, .txt_pagina5, .div_cuadros {
+    .div_general1, .info_pag3, .div_viñetas, .div_cuadros {
         flex-direction: column;
-        margin-right: 5%;
-        margin-left: 5%;
+        margin-right: 7%;
+        margin-left: 7%;
         align-items: center;
         width: auto;
     }
@@ -194,7 +194,7 @@
 
     .boton1 {
         padding: 30px 45px;
-        font-size: 130%;
+        font-size: 110%;
     }
 
     .tit_dra_info, .tit_cuadro{
@@ -229,16 +229,17 @@
 
     .frase_titulo{
         text-align: center;
+        margin-top: 8%;
     }
 
-    .imagen_dra{
-        height: auto;
-        width: auto;
+    .video_rd4{
+        width: 100%;
+        margin-bottom: 80px;
     }
 
     /* PAGINA2 */
     .pagina2{
-        height: 1800px;
+        height: 1200px;
         align-items: center;
         display: flex;
         justify-content: center;
@@ -303,48 +304,68 @@
 
     /* PAGINA 5 */
 
-    .txt_pagina5{
+    .pagina5{
+        height: 1200px;
+    }
+
+.pagina5 {
+        background-color: #f2f2f2;
+        width: 100%;
+        height: 1080px;
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    .contenedor1{
+    .contenedor1 {
         width: 100%;
     }
 
-    .contenedor2{
-        margin: 0;
+    .contenedor2 {
         width: 100%;
+        height: auto;
     }
 
-    .item{
+    .item {
         width: auto;
     }
 
-    .video_rd4{
-        width: 75%;
-        margin-bottom: 150px;
+    .imagen_dra{
+        height: auto;
+        width: 100%;
     }
 
     /* PAGINA 6 */
+    .tit_pagina6{
+        margin-bottom: 60px;
+    }
+
     .cuadro_info{
         height: auto;
         width: 60%;
-        margin-bottom: 50px;
     }
 
-    .precio{
-        font-size: x-large;
+    #cuadro_info1{
+        margin-bottom: 40px;
     }
-
+    
     .div_dudas{
-        padding-bottom: 100px;
-        background-color: rgb(121, 148, 164);
-        width: 60%;
+        margin-bottom: 10px;
+    }
+
+    .txt_consulta {
+        font-size: 120%;
+        color: rgb(222, 222, 222);
+        font-weight: lighter;
+        text-align: left; /* Alinear el texto hacia la izquierda */
+        width: 100%; /* Asegurar que ocupe todo el ancho disponible */
+        display: block; /* Evitar que Flexbox lo afecte */
     }
 
     .txt_consulta{
         font-size: 1.05em;
     }
+
 
     .boton_consulta {
         padding: 12px 20px;
@@ -376,6 +397,10 @@
 
     .p_pagina4, .txt_cuadro_info, .txt_viñeta, .txt_pagina5, .txt_consulta {
         font-size: small;
+    }
+
+    .div_boton1{
+        gap: 6%;
     }
 
     .boton1 {
@@ -555,8 +580,13 @@
     }
 
     /* PAGINA 5 */
+
+    .pagina5{
+        max-height: auto;
+    }
+    
     .txt_pagina5 {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .contenedor1 {
@@ -564,18 +594,12 @@
     }
 
     .contenedor2 {
-        margin: 0;
         width: 100%;
         height: auto;
     }
 
     .item {
         width: auto;
-    }
-
-    .video_rd4 {
-        width: 75%;
-        margin-bottom: 150px;
     }
 
     /* PAGINA 6 */
@@ -591,7 +615,7 @@
     }
 
     .div_dudas {
-        padding-bottom: 100px;
+        padding-bottom: 10px;
         background-color: rgb(121, 148, 164);
         width: 100%;
     }

@@ -57,7 +57,7 @@ export function checkScroll() {
         }
     }
     if (isInViewport(txt_pagina5, 100)) {
-        txt_pagina5.classList.add("animate__animated", "animate__bounceIn");
+        txt_pagina5.classList.add("animate__animated", "animate__fadeIn");
     }
     if (isInViewport(cuadro_info1, 100)) {
         cuadro_info1.classList.add("animate__animated", "animate__fadeInLeft");
@@ -79,7 +79,7 @@ export function checkScroll() {
             viñeta3.classList.contains("animate__fadeInRight") &&
             viñeta4.classList.contains("animate__fadeInLeft")
         )) &&
-        txt_pagina5.classList.contains("animate__bounceIn") &&
+        txt_pagina5.classList.contains("animate__fadeIn") &&
         cuadro_info1.classList.contains("animate__fadeInLeft") &&
         cuadro_info2.classList.contains("animate__fadeInRight")
     );

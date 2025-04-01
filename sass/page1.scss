@@ -32,7 +32,7 @@ body{
 
 .nombre{
     text-align: center;
-    margin-top: 5%;
+    margin-top: 95px;
     color:  rgb(120, 153, 174);
     text-decoration: underline;
     font-family: 'Inria Serif', serif;
@@ -44,19 +44,20 @@ body{
     justify-content: center;
     flex-direction: row;
     gap: 20%;
-    margin-top: 2%;
+    margin-top: 60px;
     margin-right: 12%;
     margin-left: 12%;
 }
 
 .textos1{
-    margin-top: 12%;
+    margin-top: 80px;
     margin-bottom: 10%;
     opacity: 0;
 }
 
 .titulo{
-    margin-bottom: 90px;
+    margin-bottom: 120px;
+    text-align: center;
     color:  rgb(120, 153, 174);
     font-style: normal;
 }
@@ -66,23 +67,38 @@ body{
     line-height: 1.4;
 }
 
-.parrafo{
-    margin-bottom: 120px;
-    color:  rgb(108, 111, 125);
-    font-size: 135%;
+// .parrafo{
+//     margin-bottom: 120px;
+//     color:  rgb(108, 111, 125);
+//     font-size: 135%;
+// }
+
+.div_video{
+    display: flex;
+    justify-content: center;
+}
+
+.video_rd4{
+    width: 120%;
+    height: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .div_boton1{
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    gap: 20%;
+    margin-top: 9%;
+    margin-bottom: 10%;
 }
 
 .boton1{
-    padding: 35px 55px 35px 55px;
+    padding: 30px 45px 30px 45px;
     background-color: rgb(27, 108, 159);
     color:  rgb(242, 242, 242);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: x-large;
+    font-size: large;
     font-weight: 700;
 
     border: none;
@@ -114,16 +130,12 @@ body{
     }
 }
 
-
-.imagen_dra{
-    margin-top: 100px;
-    margin-bottom: 150px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+#boton_consulta{
+    width: 285px;
 }
 
-img{
-    border-radius: 5px;
+#boton_mas_info{
+    width: 285px;
 }
 
 

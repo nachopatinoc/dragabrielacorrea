@@ -1,22 +1,5 @@
 'use strict';
 
-const imagenesPc = ["images/img2.jpg", "images/img1.jpg"];
-const imagenesMovil = ["images/img2_movil.jpg", "images/img1_movil.jpg"];
-let contador$1 = 0;
-const img = document.getElementById("imagen_dra");
-img.style.transition = "opacity 0.55s";
-img.style.WebkitTransition = "opacity 0.55s"; // para Safari
-
-function cambiarImagen(lista) {
-    contador$1 = (contador$1 + 1) % lista.length;
-    img.style.opacity = 0; // Suaviza la transición
-
-    setTimeout(() => {
-        img.src = lista[contador$1];
-        img.style.opacity = 1;
-    }, 500);
-}
-
 var datosInfo = {
     tarjeta: [
         {   
@@ -130,7 +113,7 @@ function checkScroll() {
         }
     }
     if (isInViewport(txt_pagina5, 100)) {
-        txt_pagina5.classList.add("animate__animated", "animate__bounceIn");
+        txt_pagina5.classList.add("animate__animated", "animate__fadeIn");
     }
     if (isInViewport(cuadro_info1, 100)) {
         cuadro_info1.classList.add("animate__animated", "animate__fadeInLeft");
@@ -152,7 +135,7 @@ function checkScroll() {
             viñeta3.classList.contains("animate__fadeInRight") &&
             viñeta4.classList.contains("animate__fadeInLeft")
         )) &&
-        txt_pagina5.classList.contains("animate__bounceIn") &&
+        txt_pagina5.classList.contains("animate__fadeIn") &&
         cuadro_info1.classList.contains("animate__fadeInLeft") &&
         cuadro_info2.classList.contains("animate__fadeInRight")
     );
@@ -169,26 +152,24 @@ window.addEventListener("scroll", checkScroll);
 // IMPORTS
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    // cambiarImagenes
-    const img = document.querySelector("#imagen_dra");
-    if (window.innerWidth <= 768) {
-        img.src = imagenesMovil[0]; 
-        setInterval(() => cambiarImagen(imagenesMovil), 3000);
-    } else {
-        setInterval(() => cambiarImagen(imagenesPc), 3000);
-    }
+// document.addEventListener("DOMContentLoaded", function () {
+//     // cambiarImagenes
+//     const img = document.querySelector("#imagen_dra");
+//     if (window.innerWidth <= 768) {
+//         img.src = imagenesMovil[0]; 
+//         setInterval(() => cambiarImagen(imagenesMovil), 3000);
+//     } else {
+//         setInterval(() => cambiarImagen(imagenesPc), 3000);
+//     }
 
-    // carrusel
-    const flecha_adelante = document.getElementById("flecha_adelante");
-    const flecha_atras = document.getElementById("flecha_atras");
+// carrusel
+const flecha_adelante = document.getElementById("flecha_adelante");
+const flecha_atras = document.getElementById("flecha_atras");
 
-    setTimeout(() => {
-        flecha_adelante.addEventListener("click", slideClickAdelante);
-    }, 1000);
-    
-    setTimeout(() => {
-        flecha_atras.addEventListener("click", slideClickAtras);
-    }, 1000);
-    
-});
+setTimeout(() => {
+    flecha_adelante.addEventListener("click", slideClickAdelante);
+}, 1000);
+
+setTimeout(() => {
+    flecha_atras.addEventListener("click", slideClickAtras);
+}, 1000);
