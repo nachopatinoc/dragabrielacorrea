@@ -399,10 +399,6 @@
         font-size: small;
     }
 
-    .div_boton1{
-        gap: 6%;
-    }
-
     .boton1 {
         padding: 25px;
         font-size: medium;
@@ -459,6 +455,11 @@
         font-size: medium;
     }
 
+    .textos1{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
     .titulo{
         font-size: 70%;
         margin-top: 50px;
@@ -469,6 +470,15 @@
         font-size: small;
     }
 
+    .video_rd4{
+        width: 100%;
+    }
+
+    .div_boton1{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
 
     /* PAGINA 2 */
     .pagina2 {
